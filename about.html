@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>About Me - Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10B981",
+                        "accent": "#F59E0B",
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#121212",
+                        "secondary-background-dark": "#1E1E1E",
+                        "text-light": "#333333",
+                        "text-dark": "#EAEAEA",
+                    },
+                    fontFamily: { "display": ["Inter"] },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+     <style>
+        .active-link {
+            color: #10B981; /* Primary color */
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex flex-col min-h-screen">
+    <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a class="text-2xl font-bold text-text-light dark:text-text-dark" href="beranda.html">AP</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a class="text-sm font-medium text-gray-500 hover:text-primary dark:text-gray-400 transition-colors" href="beranda.html">Home</a>
+                    <a class="text-sm font-medium text-gray-500 hover:text-primary dark:text-gray-400 transition-colors" href="portofolio.html">Portfolio</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors active-link" href="about.html">About Me</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl font-black tracking-tighter">About Me</h1>
+                    <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">My journey in understanding and building solutions in the world of technology.</p>
+                </div>
+            </div>
+        </section>
+        <section class="pb-16 md:pb-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-5 gap-8 lg:gap-16 items-start">
+                    <div class="md:col-span-2">
+                        <img alt="Headshot of Arfan" class="rounded-xl w-full aspect-[4/5] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5pE7wKaM90L4JwUWfdoonSoIeJ5wP3rdL4mvljkz1Ls78KFzmKTQB25SI8t6qzwwo5l25QUjR0E3u_5YrO0kAPStUCITcND9NcOAK5fajmrkDEnTMXifCowQjsDk3w9DiJ0D7q1Bd1FXorIBuCNq80YGetm-6ghl5gUzjXJJxuJaPaYphinHMcV4hAHRupho1lnMLRYfEkxyZf-fVdGA67KTX33ihSuH7LeildYlihR1YpYIU_PJu8OreuVgNworCMDHsTNn7LsJ"/>
+                    </div>
+                    <div class="md:col-span-3 space-y-8">
+                        <div class="space-y-4">
+                            <h2 class="text-2xl font-bold">Introduction</h2>
+                            <p class="text-gray-800 dark:text-gray-300 leading-relaxed">
+                                Hi, I'm Arfan Pramudya, an Informatics Engineering student at Lampung University. My passion lies in crafting innovative solutions and exploring the ever-evolving landscape of technology.
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <h2 class="text-2xl font-bold">Academic Background & Interests</h2>
+                            <p class="text-gray-800 dark:text-gray-300 leading-relaxed">
+                                My academic journey has been shaped by a keen interest in software development, data analysis, and cybersecurity. Courses like Advanced Algorithms and Network Security have been particularly impactful.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-50 dark:bg-secondary-background-dark py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="text-3xl font-bold">Let's Connect</h2>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">I am always open to discussions, project collaborations, or simply sharing knowledge.</p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                        <a class="inline-block bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-primary/90 transition-all duration-300" href="mailto:arfan.pramudya@example.com">
+                            Contact via Email
+                        </a>
+                        <a class="inline-block bg-primary/10 dark:bg-primary/20 text-primary font-bold py-3 px-6 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-all duration-300" href="#">
+                            Download My CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-50 dark:bg-secondary-background-dark">
+         <div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500 dark:text-gray-400">
+            <p>© 2025 Arfan Pramudya. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

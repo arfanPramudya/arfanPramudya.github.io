@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Arfan Pramudya - Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10B981",
+                        "accent": "#F59E0B",
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#121212",
+                        "secondary-background-dark": "#1E1E1E",
+                        "text-light": "#333333",
+                        "text-dark": "#EAEAEA",
+                    },
+                    fontFamily: { "display": ["Inter"] },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .active-link {
+            color: #10B981; /* Primary color */
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex flex-col min-h-screen">
+    <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a class="text-2xl font-bold text-text-light dark:text-text-dark" href="beranda.html">AP</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a class="text-sm font-medium hover:text-primary transition-colors active-link" href="beranda.html">Home</a>
+                    <a class="text-sm font-medium text-gray-500 hover:text-primary dark:text-gray-400 transition-colors" href="portofolio.html">Portfolio</a>
+                    <a class="text-sm font-medium text-gray-500 hover:text-primary dark:text-gray-400 transition-colors" href="about.html">About Me</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <section class="py-20 sm:py-24 lg:py-32" id="hero">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-light dark:text-text-dark">
+                            Informatics Engineering Student Focused on <span class="text-primary">Network Security</span> & Web Development
+                        </h1>
+                        <p class="mt-6 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0">
+                            Building secure and efficient digital solutions through clean code.
+                        </p>
+                        <div class="mt-10 flex justify-center lg:justify-start">
+                            <a class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-primary/90" href="portofolio.html">
+                                View My Portfolio
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <img class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover" src="https://photos.app.goo.gl/LVkTvMW4XZ23SUA67" alt="Profile Picture"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-20 sm:py-24 bg-gray-50 dark:bg-secondary-background-dark" id="portfolio-preview">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold tracking-tight text-center text-text-light dark:text-text-dark">Featured Projects</h2>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white dark:bg-background-dark">
+                        <img class="h-64 w-full object-cover" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Business Strategy">
+                        <div class="flex-1 p-6 flex flex-col justify-between">
+                            <div>
+                                <p class="text-xl font-semibold text-text-light dark:text-text-dark">Business Strategic Plan</p>
+                                <p class="mt-3 text-base text-gray-500 dark:text-gray-400">An in-depth analysis of self-readiness and the academic environment.</p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="inline-block bg-primary/10 text-primary text-xs font-medium px-2.5 py-0.5 rounded-full">Analisis SWOT</span>
+                                    <span class="inline-block bg-accent/10 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">Porter's Five Forces</span>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <a class="text-sm font-semibold text-primary hover:text-primary/80" href="detailPortofolio.html">View Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white dark:bg-background-dark">
+                        <img class="h-64 w-full object-cover" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop" alt="SWOT Analysis">
+                        <div class="flex-1 p-6 flex flex-col justify-between">
+                            <div>
+                                <p class="text-xl font-semibold text-text-light dark:text-text-dark">Analisis Strategis KP & Skripsi</p>
+                                <p class="mt-3 text-base text-gray-500 dark:text-gray-400">A strategic breakdown of challenges and opportunities for internships and thesis.</p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="inline-block bg-primary/10 text-primary text-xs font-medium px-2.5 py-0.5 rounded-full">SWOT</span>
+                                    <span class="inline-block bg-accent/10 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">Porter's Five Forces</span>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <a class="text-sm font-semibold text-primary hover:text-primary/80" href="detailPortofolio2.html">View Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 sm:py-24" id="competencies">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold tracking-tight text-center text-text-light dark:text-text-dark">Key Competencies</h2>
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="flex items-start p-6 bg-white dark:bg-secondary-background-dark rounded-lg shadow-sm">
+                         <span class="material-symbols-outlined text-primary text-4xl">code</span>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-text-light dark:text-text-dark">Programming</h3>
+                            <p class="mt-1 text-base text-gray-500 dark:text-gray-400">C++, Python, PHP, JavaScript</p>
+                        </div>
+                    </div>
+                     <div class="flex items-start p-6 bg-white dark:bg-secondary-background-dark rounded-lg shadow-sm">
+                        <span class="material-symbols-outlined text-primary text-4xl">view_quilt</span>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-text-light dark:text-text-dark">Frameworks</h3>
+                            <p class="mt-1 text-base text-gray-500 dark:text-gray-400">Laravel, </p>
+                        </div>
+                    </div>
+                     <div class="flex items-start p-6 bg-white dark:bg-secondary-background-dark rounded-lg shadow-sm">
+                        <span class="material-symbols-outlined text-primary text-4xl">build_circle</span>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-text-light dark:text-text-dark">Tools</h3>
+                            <p class="mt-1 text-base text-gray-500 dark:text-gray-400">Git, Docker, Wireshark</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-gray-50 dark:bg-secondary-background-dark">
+        <div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8">
+             <div class="mt-4 text-center text-sm text-gray-500 dark:text-gray-400">
+                <p>© 2025 Arfan Pramudya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
